@@ -90,6 +90,29 @@ a{text-decoration:none;color:inherit}
 .rfi-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--saffron-light);margin-bottom:4px;}
 .rfi-val{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--cream);}
 
+/* DATA ADMIN PANEL */
+.data-admin-panel{position:fixed;top:80px;right:20px;z-index:9500;background:linear-gradient(145deg,rgba(13,5,0,0.97),rgba(26,10,0,0.97));border:2px solid var(--gold);border-radius:14px;padding:20px;width:340px;box-shadow:0 20px 60px rgba(0,0,0,0.8),0 0 40px rgba(200,150,26,0.2);backdrop-filter:blur(20px);display:none;}
+.data-admin-panel.open{display:block;animation:msgIn 0.3s ease;}
+.dap-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border);}
+.dap-title{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold-bright);font-weight:700;}
+.dap-close{background:transparent;border:none;color:var(--text-muted);font-size:18px;cursor:pointer;transition:color 0.2s;padding:2px 6px;}
+.dap-close:hover{color:var(--gold-bright);}
+.dap-stat{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(255,107,0,0.08);border:1px solid var(--border);border-radius:8px;margin-bottom:8px;}
+.dap-stat-label{font-size:12px;color:var(--text-muted);letter-spacing:0.5px;}
+.dap-stat-val{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--gold-bright);}
+.dap-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:12px;border:none;border-radius:8px;font-family:'Jost',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.5px;cursor:pointer;transition:all 0.3s;margin-top:10px;}
+.dap-btn-export{background:linear-gradient(135deg,#217346,#1a5c38);color:#fff;}
+.dap-btn-export:hover{background:linear-gradient(135deg,#2a9e5a,#217346);transform:translateY(-1px);}
+.dap-btn-clear{background:rgba(139,0,0,0.4);color:var(--text-muted);border:1px solid var(--border);}
+.dap-btn-clear:hover{background:rgba(139,0,0,0.7);color:#fff;}
+.dap-note{font-size:10px;color:var(--text-muted);text-align:center;margin-top:10px;line-height:1.6;}
+.admin-trigger{position:fixed;top:50%;right:0;transform:translateY(-50%);z-index:9400;background:linear-gradient(135deg,var(--maroon),var(--crimson));border:1px solid var(--gold);border-right:none;border-radius:8px 0 0 8px;padding:14px 8px;writing-mode:vertical-rl;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);cursor:pointer;transition:all 0.3s;font-family:'Jost',sans-serif;}
+.admin-trigger:hover{background:linear-gradient(135deg,var(--crimson),var(--saffron-deep));color:#fff;}
+/* DATA CAPTURE TOAST */
+.data-toast{position:fixed;bottom:90px;right:20px;z-index:9600;background:linear-gradient(135deg,rgba(26,10,0,0.95),rgba(92,10,10,0.9));border:1px solid var(--gold);border-radius:10px;padding:12px 16px;font-size:12px;color:var(--gold-light);display:none;align-items:center;gap:10px;box-shadow:0 8px 30px rgba(0,0,0,0.5);max-width:280px;}
+.data-toast.show{display:flex;animation:msgIn 0.3s ease;}
+.data-toast i{color:var(--saffron-light);font-size:16px;flex-shrink:0;}
+
 /* CURSOR */
 .cursor{position:fixed;width:12px;height:12px;background:var(--gold-bright);border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition:transform 0.1s,width 0.2s,height 0.2s,background 0.2s;mix-blend-mode:difference;}
 .cursor-ring{position:fixed;width:36px;height:36px;border:1.5px solid var(--saffron);border-radius:50%;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:transform 0.15s ease,width 0.3s,height 0.3s;}
@@ -697,6 +720,17 @@ footer{background:var(--dark);border-top:2px solid var(--gold);}
   .dl-btns{flex-direction:column}
   .compat-split{grid-template-columns:1fr}
   .vs-div{display:none}
+  /* NUMEROLOGY MOBILE FIX */
+  .num-form-grid{grid-template-columns:1fr !important;}
+  .num-grid{grid-template-columns:1fr 1fr 1fr;}
+  /* HORO CLOSE BUTTON MOBILE FIX */
+  .horo-close{position:fixed !important;top:16px !important;right:16px !important;width:44px !important;height:44px !important;font-size:20px !important;z-index:99999 !important;background:rgba(139,0,0,0.9) !important;border:2px solid var(--gold) !important;cursor:pointer !important;}
+  .horo-modal{max-height:90vh;overflow-y:auto;}
+  /* DATA PANEL MOBILE */
+  .data-admin-panel{left:10px;right:10px;width:auto;max-width:100%;}
+  .rashi-fortune-grid{grid-template-columns:1fr 1fr;}
+  .float-free-btn{bottom:20px;left:50%;transform:translateX(-50%);animation:none;}
+  .float-free-btn:hover{transform:translateX(-50%);}
 }
 </style>
 </head>
@@ -722,6 +756,25 @@ footer{background:var(--dark);border-top:2px solid var(--gold);}
 <canvas id="cosmic-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none"></canvas>
 
 <a href="#cosmic-tools" class="float-free-btn"><i class="fas fa-star"></i> Free Tools</a>
+
+<!-- DATA ADMIN PANEL -->
+<div class="admin-trigger" onclick="toggleDataPanel()" title="View Leads Data">📊 Leads</div>
+<div class="data-admin-panel" id="dataAdminPanel">
+  <div class="dap-header">
+    <span class="dap-title">📊 Leads Captured</span>
+    <button class="dap-close" onclick="toggleDataPanel()">✕</button>
+  </div>
+  <div class="dap-stat"><span class="dap-stat-label">Total Leads</span><span class="dap-stat-val" id="dap-total">0</span></div>
+  <div class="dap-stat"><span class="dap-stat-label">Kundli Requests</span><span class="dap-stat-val" id="dap-kundli">0</span></div>
+  <div class="dap-stat"><span class="dap-stat-label">Love Match</span><span class="dap-stat-val" id="dap-compat">0</span></div>
+  <div class="dap-stat"><span class="dap-stat-label">Horoscope</span><span class="dap-stat-val" id="dap-horo">0</span></div>
+  <div class="dap-stat"><span class="dap-stat-label">Numerology</span><span class="dap-stat-val" id="dap-num">0</span></div>
+  <div class="dap-stat"><span class="dap-stat-label">Rashi Checks</span><span class="dap-stat-val" id="dap-rashi">0</span></div>
+  <button class="dap-btn dap-btn-export" onclick="exportToExcel()"><i class="fas fa-file-excel"></i> Download Excel File</button>
+  <button class="dap-btn dap-btn-clear" onclick="clearLeads()"><i class="fas fa-trash-alt"></i> Clear All Data</button>
+  <div class="dap-note">⚠️ Data is stored locally in this browser. Download Excel regularly to back up your leads.</div>
+</div>
+<div class="data-toast" id="dataToast"><i class="fas fa-check-circle"></i><span id="toast-msg">Lead captured!</span></div>
 
 <!-- TOP BAR -->
 <div class="top-bar">
@@ -1104,7 +1157,7 @@ footer{background:var(--dark);border-top:2px solid var(--gold);}
     <div class="ornament-line"><span class="orn">∞</span></div>
   </div>
   <div class="tool-card" style="max-width:700px;margin:0 auto">
-    <div class="tform-grid" style="grid-template-columns:1fr 1fr">
+    <div class="tform-grid num-form-grid" style="grid-template-columns:1fr 1fr">
       <div><label class="tform-label">Your Full Name</label><div class="tfield"><div class="tfield-icon"><i class="fas fa-user"></i></div><input type="text" id="num-name" placeholder="Enter your full name"></div></div>
       <div><label class="tform-label">Date of Birth</label><div class="tfield"><div class="tfield-icon"><i class="fas fa-birthday-cake"></i></div><input type="date" id="num-dob"></div></div>
     </div>
@@ -1573,7 +1626,10 @@ const PLANETS_RULERS={Aries:'Mars',Taurus:'Venus',Gemini:'Mercury',Cancer:'Moon'
 async function generateHoroscope(){
   const name=document.getElementById('h-name').value.trim(),dob=document.getElementById('h-dob').value,email=document.getElementById('h-email').value.trim(),phone=document.getElementById('h-phone').value.trim();
   if(!name||!dob||!email||!phone){alert('Please fill in all fields to receive your personalised horoscope.');return;}
-  const zodiac=getZodiacHoro(dob),lifeNum=getLifeNum(dob),ruler=PLANETS_RULERS[zodiac];
+  // CAPTURE LEAD DATA
+  const zodiac=getZodiacHoro(dob);
+  captureLeadData('Horoscope Check',{name,dob,email,phone:phone,sign:zodiac,notes:'Horoscope form completed'});
+  const lifeNum=getLifeNum(dob),ruler=PLANETS_RULERS[zodiac];
   document.getElementById('horoFormDiv').style.display='none';document.getElementById('horoLoading').classList.add('show');
   await new Promise(r=>setTimeout(r,2800));
   document.getElementById('horoLoading').classList.remove('show');
@@ -1597,6 +1653,264 @@ const blogData={blog1:{title:"Signs You Need a Love Spell Caster Based on Your B
 function openBlogModal(key){const d=blogData[key];if(!d)return;document.getElementById('blog-modal-img').src=d.img;document.getElementById('blog-modal-title').textContent=d.title;document.getElementById('blog-modal-date').textContent=d.date;document.getElementById('blog-modal-body').innerHTML=d.body;document.getElementById('blogModalOverlay').classList.add('open');document.body.style.overflow='hidden';}
 function closeBlogModal(){document.getElementById('blogModalOverlay').classList.remove('open');document.body.style.overflow='';}
 function closeBlogModalOnBg(e){if(e.target===document.getElementById('blogModalOverlay'))closeBlogModal();}
+
+// ════════════ DATA CAPTURE & EXCEL EXPORT SYSTEM ════════════
+function getLeads(){try{return JSON.parse(localStorage.getItem('rachit_leads')||'[]')}catch(e){return[]}}
+function saveLeads(arr){localStorage.setItem('rachit_leads',JSON.stringify(arr))}
+
+function captureLeadData(type, data){
+  const leads = getLeads();
+  const entry = {
+    id: Date.now(),
+    timestamp: new Date().toLocaleString('en-GB'),
+    source: type,
+    ...data
+  };
+  leads.push(entry);
+  saveLeads(leads);
+  updateAdminStats();
+  showToast('✅ Lead captured from ' + type + '!');
+}
+
+function showToast(msg){
+  const t=document.getElementById('dataToast');
+  document.getElementById('toast-msg').textContent=msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),3000);
+}
+
+function updateAdminStats(){
+  const leads=getLeads();
+  document.getElementById('dap-total').textContent=leads.length;
+  document.getElementById('dap-kundli').textContent=leads.filter(l=>l.source==='Kundli Generator').length;
+  document.getElementById('dap-compat').textContent=leads.filter(l=>l.source==='Love Compatibility').length;
+  document.getElementById('dap-horo').textContent=leads.filter(l=>l.source==='Horoscope Check').length;
+  document.getElementById('dap-num').textContent=leads.filter(l=>l.source==='Numerology Calculator').length;
+  document.getElementById('dap-rashi').textContent=leads.filter(l=>l.source==='Rashi Guide').length;
+}
+
+function toggleDataPanel(){
+  updateAdminStats();
+  document.getElementById('dataAdminPanel').classList.toggle('open');
+}
+
+function clearLeads(){
+  if(confirm('Clear ALL captured leads? This cannot be undone. Make sure you have exported first!')){
+    localStorage.removeItem('rachit_leads');
+    updateAdminStats();
+    showToast('All leads cleared.');
+  }
+}
+
+function exportToExcel(){
+  const leads=getLeads();
+  if(leads.length===0){alert('No leads captured yet. Ask visitors to use the free tools!');return;}
+
+  // Load SheetJS dynamically
+  if(!window.XLSX){
+    const s=document.createElement('script');
+    s.src='https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';
+    s.onload=()=>doExport(leads);
+    document.head.appendChild(s);
+  } else {
+    doExport(leads);
+  }
+}
+
+function doExport(leads){
+  const wb = XLSX.utils.book_new();
+
+  // ── Sheet 1: All Leads ──
+  const allRows = leads.map(l=>({
+    'ID': l.id,
+    'Date & Time': l.timestamp,
+    'Source / Tool Used': l.source,
+    'Full Name': l.name || l.name1 || '—',
+    'Second Person Name': l.name2 || '—',
+    'Date of Birth': l.dob || l.dob1 || '—',
+    'Second DOB': l.dob2 || '—',
+    'Place of Birth': l.place || '—',
+    'Gender': l.gender || '—',
+    'Email': l.email || '—',
+    'Phone': l.phone || '—',
+    'Moon Sign / Rashi': l.rashi || l.rashi1 || '—',
+    'Second Rashi': l.rashi2 || '—',
+    'Numerology Life Path': l.lifePath || '—',
+    'Horoscope Sign Checked': l.sign || '—',
+    'Notes': l.notes || '—'
+  }));
+
+  const ws1 = XLSX.utils.json_to_sheet(allRows);
+  // Column widths
+  ws1['!cols'] = [
+    {wch:10},{wch:20},{wch:22},{wch:22},{wch:22},{wch:14},{wch:14},
+    {wch:18},{wch:10},{wch:28},{wch:20},{wch:20},{wch:12},{wch:18},{wch:30}
+  ];
+  styleSheetHeader(ws1, allRows[0] ? Object.keys(allRows[0]).length : 15);
+  XLSX.utils.book_append_sheet(wb, ws1, 'All Leads');
+
+  // ── Sheet 2: Kundli Leads ──
+  const kundliLeads = leads.filter(l=>l.source==='Kundli Generator').map(l=>({
+    'Date & Time':l.timestamp,'Full Name':l.name||'—','Date of Birth':l.dob||'—',
+    'Time of Birth':l.tob||'—','Place of Birth':l.place||'—','Gender':l.gender||'—','Email':l.email||'—'
+  }));
+  if(kundliLeads.length){
+    const ws2=XLSX.utils.json_to_sheet(kundliLeads);
+    ws2['!cols']=[{wch:20},{wch:22},{wch:16},{wch:14},{wch:20},{wch:10},{wch:28}];
+    styleSheetHeader(ws2,7);
+    XLSX.utils.book_append_sheet(wb,ws2,'Kundli Leads');
+  }
+
+  // ── Sheet 3: Love Compatibility ──
+  const compatLeads=leads.filter(l=>l.source==='Love Compatibility').map(l=>({
+    'Date & Time':l.timestamp,'Person 1 Name':l.name1||'—','Person 1 DOB':l.dob1||'—',
+    'Person 1 Rashi':l.rashi1||'—','Person 2 Name':l.name2||'—','Person 2 DOB':l.dob2||'—','Person 2 Rashi':l.rashi2||'—'
+  }));
+  if(compatLeads.length){
+    const ws3=XLSX.utils.json_to_sheet(compatLeads);
+    ws3['!cols']=[{wch:20},{wch:20},{wch:14},{wch:18},{wch:20},{wch:14},{wch:18}];
+    styleSheetHeader(ws3,7);
+    XLSX.utils.book_append_sheet(wb,ws3,'Love Compatibility');
+  }
+
+  // ── Sheet 4: Numerology ──
+  const numLeads=leads.filter(l=>l.source==='Numerology Calculator').map(l=>({
+    'Date & Time':l.timestamp,'Full Name':l.name||'—','Date of Birth':l.dob||'—','Life Path Number':l.lifePath||'—'
+  }));
+  if(numLeads.length){
+    const ws4=XLSX.utils.json_to_sheet(numLeads);
+    ws4['!cols']=[{wch:20},{wch:22},{wch:16},{wch:16}];
+    styleSheetHeader(ws4,4);
+    XLSX.utils.book_append_sheet(wb,ws4,'Numerology');
+  }
+
+  // ── Sheet 5: Horoscope & Rashi ──
+  const horoLeads=leads.filter(l=>l.source==='Horoscope Check'||l.source==='Rashi Guide').map(l=>({
+    'Date & Time':l.timestamp,'Tool':l.source,'Name':l.name||'—','Sign Checked':l.sign||l.rashi||'—',
+    'DOB':l.dob||'—','Email':l.email||'—','Phone':l.phone||'—'
+  }));
+  if(horoLeads.length){
+    const ws5=XLSX.utils.json_to_sheet(horoLeads);
+    ws5['!cols']=[{wch:20},{wch:18},{wch:22},{wch:20},{wch:16},{wch:28},{wch:16}];
+    styleSheetHeader(ws5,7);
+    XLSX.utils.book_append_sheet(wb,ws5,'Horoscope & Rashi');
+  }
+
+  const date=new Date().toISOString().split('T')[0];
+  XLSX.writeFile(wb, `Astrologer_Rachit_Leads_${date}.xlsx`);
+  showToast('📥 Excel downloaded! '+leads.length+' leads exported.');
+}
+
+function styleSheetHeader(ws, numCols){
+  // Style the header row with gold background
+  const cols='ABCDEFGHIJKLMNO'.split('');
+  cols.slice(0,numCols).forEach(c=>{
+    const cell=ws[c+'1'];
+    if(cell){
+      cell.s={
+        font:{bold:true,color:{rgb:'FFFFFF'},sz:11},
+        fill:{fgColor:{rgb:'8B0000'}},
+        alignment:{horizontal:'center',vertical:'center',wrapText:true},
+        border:{bottom:{style:'medium',color:{rgb:'C8961A'}}}
+      };
+    }
+  });
+}
+
+// ── Patch generateKundli to also capture lead ──
+const _origGenerateKundli = typeof generateKundli === 'function' ? generateKundli : null;
+window._patchedKundli = false;
+
+function patchKundliFn(){
+  if(window._patchedKundli) return;
+  window._patchedKundli = true;
+  const origFn = window.generateKundli;
+  window.generateKundli = function(){
+    const name=document.getElementById('k-name').value.trim();
+    const dob=document.getElementById('k-dob').value;
+    const tob=document.getElementById('k-tob').value;
+    const place=document.getElementById('k-place').value.trim();
+    const gender=document.getElementById('k-gender').value;
+    const email=document.getElementById('k-email').value.trim();
+    if(name) captureLeadData('Kundli Generator',{name,dob,tob,place,gender,email});
+    origFn.apply(this,arguments);
+  };
+}
+
+function patchCompatFn(){
+  const origFn = window.calculateCompatibility;
+  window.calculateCompatibility = function(){
+    const name1=document.getElementById('p1-name').value.trim();
+    const dob1=document.getElementById('p1-dob').value;
+    const rashi1=document.getElementById('p1-rashi').value;
+    const name2=document.getElementById('p2-name').value.trim();
+    const dob2=document.getElementById('p2-dob').value;
+    const rashi2=document.getElementById('p2-rashi').value;
+    if(name1||name2) captureLeadData('Love Compatibility',{name1,dob1,rashi1,name2,dob2,rashi2});
+    origFn.apply(this,arguments);
+  };
+}
+
+// ── Patch numerology ──
+const _origCalcNumerology = window.calcNumerology;
+window.calcNumerology = function(){
+  const name=document.getElementById('num-name').value.trim();
+  const dob=document.getElementById('num-dob').value;
+  if(name){
+    const digits=dob.replace(/-/g,'').split('').map(Number);
+    let lp=digits.reduce((a,b)=>a+b,0);
+    while(lp>9){let s=0;String(lp).split('').forEach(d=>s+=parseInt(d));lp=s;}
+    captureLeadData('Numerology Calculator',{name,dob,lifePath:lp});
+  }
+  _origCalcNumerology.apply(this,arguments);
+};
+
+// ── Patch rashi ──
+const _origShowRashi = window.showRashi;
+window.showRashi = function(key){
+  const d=rashiData[key];
+  if(d) captureLeadData('Rashi Guide',{rashi:d.name,sign:d.name,notes:'Checked daily rashi guide'});
+  _origShowRashi.apply(this,arguments);
+};
+
+// ── Patch horoscope modal ──
+function patchHoroFn(){
+  const horoForm=document.getElementById('horoOverlay');
+  if(!horoForm) return;
+  // Listen for horoscope result shown
+  const origOpenHoro=window.openHoro;
+  if(origOpenHoro){
+    window.openHoro=function(){
+      origOpenHoro.apply(this,arguments);
+    };
+  }
+  // Capture when user generates horoscope
+  const horoBtn=document.querySelector('#horoOverlay .btn-tool, #horoOverlay [onclick*="generateHoro"]');
+  if(horoBtn){
+    const origClick=horoBtn.onclick;
+    horoBtn.onclick=function(e){
+      const sign=document.getElementById('horo-sign')||document.querySelector('#horoOverlay select');
+      const name=document.querySelector('#horoOverlay input[type="text"]');
+      const dob=document.querySelector('#horoOverlay input[type="date"]');
+      captureLeadData('Horoscope Check',{
+        sign:sign?sign.value:'Unknown',
+        name:name?name.value:'—',
+        dob:dob?dob.value:'—'
+      });
+      if(origClick) origClick.call(this,e);
+    };
+  }
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded',function(){
+  updateAdminStats();
+  setTimeout(()=>{
+    patchKundliFn();
+    patchCompatFn();
+    patchHoroFn();
+  },500);
+});
 
 // ════════════ NUMEROLOGY CALCULATOR ════════════
 const numData = {
