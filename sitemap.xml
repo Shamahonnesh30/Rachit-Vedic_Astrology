@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- HOMEPAGE -->
   <url><loc>https://www.bestastrologer.co.uk/</loc><lastmod>2026-05-16</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <!-- SERVICE PAGES -->
   <url><loc>https://www.bestastrologer.co.uk/negative-energy-removal-uk.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.bestastrologer.co.uk/get-ex-back-uk.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.bestastrologer.co.uk/black-magic-removal-uk.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -15,5 +13,60 @@
   <url><loc>https://www.bestastrologer.co.uk/kundli-reading-uk.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.bestastrologer.co.uk/family-problem-solution-uk.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.bestastrologer.co.uk/career-business-astrology-uk.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-
+  <!-- BLOG ARTICLES -->
+  <url><loc>https://www.bestastrologer.co.uk/kaal-sarp-dosha-guide-uk.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/kundli-matching-uk-guide.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- CITY PAGES -->
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-london.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-birmingham.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-manchester.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-leicester.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-leeds.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-glasgow.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-bradford.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-coventry.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-sheffield.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-nottingham.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-edinburgh.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-cardiff.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-bristol.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-liverpool.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-southampton.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-luton.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-derby.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-wolverhampton.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-wembley.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-slough.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-newcastle.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-plymouth.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-reading.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-stoke.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/astrologer-peterborough.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <!-- LOVE SPELL CASTER PAGES -->
+  <url><loc>https://www.bestastrologer.co.uk/love-spell-caster-london.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/love-spell-caster-birmingham.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/love-spell-caster-manchester.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/love-spell-caster-leicester.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/love-spell-caster-bradford.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <!-- SERVICE + CITY COMBINATION PAGES -->
+  <url><loc>https://www.bestastrologer.co.uk/black-magic-removal-london.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/black-magic-removal-birmingham.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/black-magic-removal-manchester.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/black-magic-removal-leicester.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/black-magic-removal-leeds.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/negative-energy-removal-london.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/negative-energy-removal-birmingham.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/negative-energy-removal-manchester.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/negative-energy-removal-leicester.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/negative-energy-removal-leeds.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/psychic-reading-london.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/psychic-reading-birmingham.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/psychic-reading-manchester.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/psychic-reading-leicester.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/psychic-reading-leeds.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/spiritual-healer-london.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/spiritual-healer-birmingham.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/spiritual-healer-manchester.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/spiritual-healer-leicester.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.bestastrologer.co.uk/spiritual-healer-leeds.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 </urlset>
