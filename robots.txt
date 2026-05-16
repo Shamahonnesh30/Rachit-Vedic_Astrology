@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://www.bestastrologer.co.uk/sitemap.xml
+
+# Block non-essential crawling of assets
+User-agent: *
+Disallow: /images/
+Disallow: /*.zip$
